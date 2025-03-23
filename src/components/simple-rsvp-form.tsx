@@ -10,12 +10,9 @@ interface SimpleRsvpFormProps {
 
 export default function SimpleRsvpForm({ onSubmitSuccess, userId }: SimpleRsvpFormProps) {
   const [mounted, setMounted] = useState(false)
-  const [name, setName] = useState("")
-  const [email, setEmail] = useState("")
   const [attending, setAttending] = useState<string | null>(null)
   const [guests, setGuests] = useState("1")
   const [dietaryRestrictions, setDietaryRestrictions] = useState("")
-  const [songRequest, setSongRequest] = useState("")
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -50,7 +47,7 @@ export default function SimpleRsvpForm({ onSubmitSuccess, userId }: SimpleRsvpFo
       } else {
         setError('Something went wrong. Please try submitting again.')
       }
-    } catch (err) {
+    } catch {
       setError('Failed to submit RSVP. Please try again.')
     } finally {
       setIsSubmitting(false)
@@ -96,7 +93,7 @@ export default function SimpleRsvpForm({ onSubmitSuccess, userId }: SimpleRsvpFo
                 required
                 className="h-4 w-4"
               />
-              <span>Yes, I'll be there</span>
+              <span>Yes, I&apos;ll be there</span>
             </label>
             <label className="flex items-center space-x-2">
               <input
@@ -107,7 +104,7 @@ export default function SimpleRsvpForm({ onSubmitSuccess, userId }: SimpleRsvpFo
                 onChange={() => setAttending("no")}
                 className="h-4 w-4"
               />
-              <span>Sorry, I can't make it</span>
+              <span>Sorry, I can&apos;t make it</span>
             </label>
           </div>
         </div>
@@ -143,7 +140,7 @@ export default function SimpleRsvpForm({ onSubmitSuccess, userId }: SimpleRsvpFo
                 className="w-full px-3 py-2 border rounded-md h-24"
               />
               <p className="text-xs text-gray-500 mt-1">
-              Example: If you don't eat Garlic, please indicate here.
+                Example: If you don&apos;t eat Garlic, please indicate here.
               </p>
             </div>
           </>

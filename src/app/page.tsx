@@ -26,7 +26,7 @@ export default function Home() {
       <div className="min-h-screen flex items-center justify-center">
         <div className="bg-white rounded-lg shadow-md p-6 text-center">
           <h2 className="text-2xl font-bold mb-2">Invalid Link</h2>
-          <p className="text-gray-600">Please make sure you're using the correct invitation link.</p>
+          <p className="text-gray-600">Please make sure you&apos;re using the correct invitation link.</p>
         </div>
       </div>
     )
@@ -82,7 +82,7 @@ export default function Home() {
         <div className="container mx-auto px-4 max-w-3xl">
           {!isFormSubmitted && (
             <div className="text-center mb-8 sm:mb-12">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-3 sm:mb-4">We'd Love to Have You Join Us</h2>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-3 sm:mb-4">We&apos;d Love to Have You Join Us</h2>
               <p className="text-gray-600">Please let us know if you can make it by April 10, 2025</p>
             </div>
           )}
@@ -93,7 +93,7 @@ export default function Home() {
       {/* Footer */}
       <footer className="py-8 bg-gray-50 text-center text-gray-500">
         <div className="container mx-auto px-4">
-          <p>We can't wait to celebrate with you!</p>
+          <p>We can&apos;t wait to celebrate with you!</p>
           <div className="mt-4 flex flex-col items-center justify-center">
             <p className="mb-2">Have any doubt/issue, please report it here</p>
             <button

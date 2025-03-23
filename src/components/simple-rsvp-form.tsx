@@ -62,8 +62,11 @@ export default function SimpleRsvpForm({ onSubmitSuccess, userId }: SimpleRsvpFo
     return (
       <div className="bg-white rounded-lg shadow-md p-6 text-center">
         <h2 className="text-2xl font-bold mb-2">Thank You!</h2>
-        <p className="text-gray-600 mb-4">Your RSVP has been received. We look forward to celebrating with you!</p>
-        <div className="text-pink-500 text-5xl mb-4">❤️</div>
+        <p className="text-gray-600 mb-4">
+          Your RSVP has been received.
+          {attending === 'yes' && ' We look forward to celebrating with you!'}
+        </p>
+        {attending === 'yes' && <div className="text-pink-500 text-5xl mb-4">❤️</div>}
       </div>
     )
   }

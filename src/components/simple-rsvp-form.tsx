@@ -35,7 +35,8 @@ export default function SimpleRsvpForm({ onSubmitSuccess, userId }: SimpleRsvpFo
         body: JSON.stringify({
           user: userId,
           attending: attending === 'yes',
-          attendees: parseInt(guests, 10)
+          attendees: parseInt(guests, 10),
+          diet: attending === 'yes' ? dietaryRestrictions : ''
         })
       })
 

@@ -83,7 +83,7 @@ export default function RsvpPage() {
           {!isFormSubmitted && (
             <div className="text-center mb-8 sm:mb-12">
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-serif mb-3 sm:mb-4">We&apos;d Love to Have You Join Us</h2>
-              <p className="text-gray-600">Please let us know if you can make it by April 10, 2025</p>
+              <p className="text-gray-600">Please let us know if you can make it by April 20, 2025</p>
             </div>
           )}
           <SimpleRsvpForm onSubmitSuccess={() => setIsFormSubmitted(true)} userId={userId} />
